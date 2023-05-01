@@ -46,9 +46,11 @@ namespace PetagogetdheDepartamenti.Controllers
         {
             Departament newDepartament = new Departament()
             {
+                Godina =payload.Godina,
                 EmriD = payload.EmriD,
                 Numri = payload.Numri,
                 DateCreated = DateTime.UtcNow
+
             };
 
             _appDbContext.Departamentet.Add(newDepartament);
@@ -69,6 +71,7 @@ namespace PetagogetdheDepartamenti.Controllers
 
             Departament.EmriD = payload.EmriD;
             Departament.Numri = payload.Numri;
+            Departament.Godina = payload.Godina;
 
 
             _appDbContext.Departamentet.Update(Departament);
