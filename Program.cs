@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-string dbConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjektFinal;Integrated Security=True;Pooling=False";
+string dbConnectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ProjektFin;Integrated Security=True;Pooling=False";
 
 
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(dbConnectionString));
