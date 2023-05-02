@@ -3,7 +3,7 @@ namespace PetagogetdheDepartamenti.data.Models
 {
     public class Departament:BaseClass
     {
-        public string Numri { get; set; }
+        public int Numri { get; set; }
         public string EmriD { get; set; }
 
         public string Godina { get; set; }
