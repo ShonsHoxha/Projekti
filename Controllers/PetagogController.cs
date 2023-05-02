@@ -42,7 +42,7 @@ namespace PetagogetdheDepartamenti.Controllers
 
                 Emer = payload.Emer,
                 Mbiemer = payload.Mbiemer,
-                DEP = DateTime.UtcNow.AddYears(-20),
+                DEP = DateTime.UtcNow,
                 Lenda = payload.Lenda,
 
                 DepartamentId = payload.DepartamentId
@@ -66,7 +66,7 @@ namespace PetagogetdheDepartamenti.Controllers
 
             Petagog.Emer = payload.Emer;
             Petagog.Mbiemer = payload.Mbiemer;
-            Petagog.DEP = DateTime.UtcNow.AddYears(-20);
+            Petagog.DEP = DateTime.UtcNow;
             Petagog.Lenda = payload.Lenda;
 
 
